@@ -1,89 +1,48 @@
 <template>
   <div class="lawyer">
     <!-- <Card></Card> -->
-    <NavBar v-show="navShow" :title="title" :isleftarrow="isleftarrow" id="nav"></NavBar>
-    <!-- <div id="place-holder"></div> -->
+    <NavBar
+      v-show="navShow"
+      :title="title"
+      :isleftarrow="isleftarrow"
+      id="nav"
+    ></NavBar>
     <div id="content-container">
-      <div id="card-container">
-        <Card
-          v-for="item in items"
-          :key="item.id"
-          xStart="5vw"
-          wid="92vw"
-          roundSize="1.86vmin"
-          roundSizeLeft="3vmin"
-          angle="40"
-        >
-          <div class="inject">
-            <SvgIcon
-              v-if="item.sex == 'm'"
-              name="male_lawyer"
-              color="#5fbf44"
-              height="11.5vh"
-              class="image"
-            />
-            <SvgIcon
-              v-else
-              name="female_lawyer"
-              color="#5fbf44"
-              height="11.5vh"
-              class="image"
-            />
-            <div class="content">
-              <p class="name">
-                <span v-if="item.sex == 'm'">Rechtsanwalter</span>
-                <span v-else>Rechtsanwältin</span>
-                <br />
-                <span>{{ item.title }}</span>
-              </p>
-
-              <div class="information">
-                <div class="detail">
-                  <span>450m | {{ value.toString().replace(".", ",") }}</span>
-                  <Rate :value="value" :disabled="true" buttonSize="0.95rem" starSize="0.8rem"></Rate>
-                  <!--<van-rate v-model="value" size="0.8rem" gutter="0.15rem" allow-half icon="my-icon-star_full" void-icon="my-icon-star_gray"/>-->
-                </div>
-                <p class="open-status">geöffnet</p>
-              </div>
+      <div class="category" >
+        <img class="img" src="../assets/lawyer/lawyer_index.png" />
+        <p>Falls Sie jetzt keine stichhaltigen Beweise haben. Sprechen Sie bitte, mit dem Anwalt/der Anwältin und lösen Sie das Problem.</p>
+        <div class="card-container">
+          <Card
+            xStart="10vw"
+            height="60vmax"
+            wid="100%"
+            roundSize="4vmin"
+            roundSizeLeft="4vmin"
+          >
+            <div class="inject">
+              <router-link
+                style="text-decoration: none; color: inherit"
+                to="/main/lawyer/list"
+              >
+                <SvgIcon class="link_active1" name="link_lawyer" />
+              </router-link>
             </div>
-            <div class="icons">
-              <!--
-          <SvgIcon name="sms" color="#5fbf44"  height="5.5vw" width="5.5vw" class="image"/>
-          <SvgIcon name="call" color="#5fbf44" height="5.5vw" width="5.5vw" class="image"/>-->
-              <SvgIcon
-                name="sms"
-                color="#5fbf44"
-                height="2.5ch"
-                width="2.5ch"
-                class="image"
-                @click.native="sendSMS('88888888');"
-              />
-              <SvgIcon
-                name="call"
-                color="#5fbf44"
-                height="2.5ch"
-                width="2.5ch"
-                class="image"
-                @click.native="call('88888888');"
-              />
-            </div>
-          </div>
-        </Card>
+          </Card>
+        </div>
       </div>
+      
     </div>
     <TabBar v-show="tabShow"></TabBar>
   </div>
 </template>
 <script>
-import Card from "@/components/Card.vue";
-import Rate from "@/components/Rate.vue";
 import NavBar from "@/components/NavBar.vue";
 import TabBar from "@/components/TabBar.vue";
+import Card from "@/components/Card.vue";
 export default {
-  name: "Police",
+  name: "Lawyer",
   components: {
     Card,
-    Rate,
     NavBar,
     TabBar,
   },
@@ -95,176 +54,100 @@ export default {
       window.open('sms:'+number);
     },
   },
-  
   data() {
     return {
-      active: 0,
-      title: "Rezension",
+      activePage: 1,
+      title: "",
       isleftarrow: "",
       transitionName: "fade",
       navShow: true,
       tabShow: true,
-      value: 2.5,
-      items: [
-        { id: 1, title: "1", sex: "m" },
-        { id: 2, title: "2", sex: "f" },
-        { id: 3, title: "3", sex: "m" },
-        { id: 4, title: "4", sex: "f" },
-        { id: 5, title: "5", sex: "m" },
-        { id: 6, title: "6", sex: "f" },
-        { id: 7, title: "7", sex: "m" },
-        { id: 8, title: "8", sex: "f" },
-        { id: 9, title: "9", sex: "m" },
-        { id: 10, title: "10", sex: "f" },
-      ],
     };
   },
 };
 </script>
 <style lang="scss" scoped>
-#nav{
-  width:100%;
-  height:8vh;
-  display:block;
-  ::v-deep .van-nav-bar{
-    margin-top:1vh;
+#nav {
+  width: 100%;
+  display: block;
+  ::v-deep .van-nav-bar {
+    margin-top: 1vh;
   }
 }
-/*
-#place-holder {
-  width: 100vw;
-  height: 8vh;
-  display: block;
-}*/
 #content-container {
-  width: 100%;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   display: block;
-  overflow-y: scroll;
-  font-size: 5rem;
+  // overflow-y: scroll;
+  // font-size: 5rem;
   /*padding:0 1rem*/
 }
 
-.lawyer {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*justify-content: flex-start;*/
-  text-align: center;
-  background-color: #dedfd8;
+.card-container {
+  filter: drop-shadow(2.4vw -1.11vh 0.99vh rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(2.4vw -1.11vh 0.99vh rgba(0, 0, 0, 0.1));
+  position: fixed;
+  bottom: 0;
 }
+
 .card {
   background-color: $card-color;
   /*margin-bottom: 1.5rem;*/
   margin-bottom: 2vh;
   /*height:15vh;*/
-}
-#card-container {
-  padding: 0 4vw;
-  width: 100%;
-  height: auto;
-  min-height: 100% !important;
-  overflow-y: visible;
-  filter: drop-shadow(2.13vw 0.73vh 0.61vh rgba(0, 0, 0, 0.15)) !important;
-  -webkit-filter: drop-shadow(
-    2.13vw 0.73vh 0.61vh rgba(0, 0, 0, 0.15)
-  ) !important;
-}
-.inject {
-  height: 18vh;
-  padding-bottom: 2vh;
-  padding-top: 1vh;
-  padding-right: 2vw;
-  .image {
-    grid-area: image;
-    /*margin-right: 0.5rem;*/
-    margin-right: 2vw;
-  }
-  .icons {
-    grid-area: icons;
-    width: 100%;
-
-    i {
-      float: right;
-      /*margin-left: 0.6rem;*/
-      /*margin-left: 2vw;*/
-      /*margin-left: 1ch;*/
-      margin-left: 2.5ch;
-    }
-  }
-  .content {
-    grid-area: content;
-    display: grid;
-    grid-template-rows: 3fr 2fr;
-    /*gap:0.1rem;*/
-    gap: 0.5vh;
-    grid-template-areas:
-      "name"
-      "info";
-    .name {
-      grid-area: name;
-      span {
-        float: left;
-        display: block;
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: $text-color;
-        -webkit-text-stroke-width: 0.5px;
-      }
-    }
-    .information {
-      grid-area: info;
-      /*position: relative;*/
-      .detail {
-        display: grid;
-        /*grid-template-columns: 1.1fr 2fr;*/
-        grid-template-columns: 8.5ch auto;
-        gap: 0px;
-        grid-template-areas: "detail rate";
-        align-items: center;
-        justify-items:start;
-        span {
-          text-align: left;
-          font-size: 1rem;
-          display: block;
-          width: 100%;
-          color: $text-color;
-          grid-area: detail;
-        }
-        .Rate {
-          grid-area: rate;
-          /*margin-left: 0.3rem;*/
-          /*margin-left: 1.5vw;*/
-          margin-left: 1ch;
-        }
-      }
-      .open-status {
-        /*margin-top: 0.2rem;*/
-        margin-top: 0.5vh;
-        color: $primary-color;
-        text-align: left;
-        display: block;
-        width: 100%;
-      }
-    }
-  }
-  display: grid;
-  grid-template-columns: 1.1fr 2fr;
-  grid-template-rows: 5fr 1.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "image content"
-    "icons icons";
-  justify-items: center;
-  align-items: center;
-  grid-auto-flow: column;
-}
-.card {
   clip-path: var(--my-clip-path) !important;
+
+  .inject {
+    height: 35vh;
+    width: 100vw;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    .link_active1 {
+      margin-top: 3ch;
+      height: 8ch;
+      width: 30ch;
+    }
+  }
+}
+
+.lawyer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // text-align: center;
+  background-color: #dedfd8;
+  // flex-direction: column;
+  .category {
+    width: 100vw;
+    height: 100vh;
+    .img {
+      width: 100%;
+      z-index: -1;
+      display: inline;
+    }
+    p{
+      position: fixed;
+      bottom: 45vh;
+      right:7vw;
+      width:69.5vw;
+      color:$primary-color;
+      font-size:1.05em;
+      -webkit-text-stroke: 0.03rem;
+    }
+  }
+}
+::v-deep .van-nav-bar {
+  background-color: transparent !important;
+}
+
+::v-deep .van-tabbar {
+  background-color: $card-color;
+  .van-tabbar-item {
+    background-color: $card-color;
+  }
 }
 </style>

@@ -38,7 +38,7 @@ export default {
       if(this.hasmenu){
         this.$router.push('/main/menu');
       }else{
-        this.$router.push('/');
+        this.$router.push('/main');
       }
       
     },

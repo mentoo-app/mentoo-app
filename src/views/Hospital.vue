@@ -1,5 +1,5 @@
 <template>
-  <div class="police">
+  <div class="hospital">
     <!-- <Card></Card> -->
     <NavBar
       v-show="navShow"
@@ -8,9 +8,9 @@
       id="nav"
     ></NavBar>
     <div id="content-container">
-      <div v-if="activePage == 1" class="category" id="cat1">
-        <img class="img" src="../assets/police/police_man_index.png" />
-        <p>Wenn Sie sich sicher sind, dass Sie eine Anzeige erstatten möchten, dann ist es wichtig, eventuelle Beweise so schnell wie möglich sichern zu lassen.</p>
+      <div class="category" >
+        <img class="img" src="../assets/hospital/hospital_index.png" />
+        <p>Suchen Sie bitte sofort eine Arztpraxis auf. DNA-Spuren kann innerhalb der ersten 72 Stunden nach der Tat im Blut gesichert werden.</p>
         <div class="card-container">
           <Card
             xStart="10vw"
@@ -22,41 +22,15 @@
             <div class="inject">
               <router-link
                 style="text-decoration: none; color: inherit"
-                to="/main/police/steps"
+                to="/main/hospital/list"
               >
-                <SvgIcon class="link_active1" name="link_police_active" />
+                <SvgIcon class="link_active1" name="link_hospital" />
               </router-link>
-              <SvgIcon
-                @click.native="activePage = 2"
-                class="link_inactive1"
-                name="link_110_inactive"
-              />
             </div>
           </Card>
         </div>
       </div>
-      <div v-else class="category" id="cat2">
-        <img class="img" src="../assets/police/police_woman_index.png" />
-        <p>Wenn alle Beweise vorhanden sind, und Sie noch Anzeige erstatten möchten. Wählen Sie bitte 110!</p>
-        <div class="card-container">
-          <Card
-            xStart="10vw"
-            height="60vmax"
-            wid="100%"
-            roundSize="4vmin"
-            roundSizeLeft="4vmin"
-          >
-            <div class="inject">
-              <SvgIcon class="link_active2" name="link_110_active" @click.native="call('110');"/>
-              <SvgIcon
-                @click.native="activePage = 1"
-                class="link_inactive2"
-                name="link_police_inactive"
-              />
-            </div>
-          </Card>
-        </div>
-      </div>
+      
     </div>
     <TabBar v-show="tabShow"></TabBar>
   </div>
@@ -66,7 +40,7 @@ import NavBar from "@/components/NavBar.vue";
 import TabBar from "@/components/TabBar.vue";
 import Card from "@/components/Card.vue";
 export default {
-  name: "Lawyer",
+  name: "Hospital",
   components: {
     Card,
     NavBar,
@@ -130,29 +104,14 @@ export default {
     display: flex;
     flex-direction: column;
     .link_active1 {
-      margin-top: 2ch;
-      height: 10ch;
-      width: fit-content;
-    }
-    .link_inactive1 {
       margin-top: 3ch;
-      height: 2ch;
-      width: 20ch;      
-    }
-    .link_active2 {
-      margin-top: 2.5ch;
-      height: 7.8ch;
-      width: 24ch;
-    }
-    .link_inactive2 {
-      margin-top: 4ch;
-      height: 2.3ch;
-      width: 28ch;      
+      height: 8ch;
+      width: 36ch;
     }
   }
 }
 
-.police {
+.hospital {
   position: absolute;
   width: 100vw;
   height: 100vh;

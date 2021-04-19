@@ -7,10 +7,10 @@
       <van-tabbar-item to="/main/lawyer"
         ><SvgIcon name="lawyer_icon"></SvgIcon>Anwaltsbüro</van-tabbar-item
       >
-      <van-tabbar-item
+      <van-tabbar-item to="/main/hospital"
         ><SvgIcon name="hospital_icon"></SvgIcon>Krankenhaus</van-tabbar-item
       >
-      <van-tabbar-item
+      <van-tabbar-item to="/main/psy"
         ><SvgIcon name="psy_icon"></SvgIcon>Traumahilfe</van-tabbar-item
       >
       <van-tabbar-item
@@ -48,6 +48,9 @@ export default {};
       font-size: 0.7rem;
       -webkit-text-stroke: 0.03rem;
       margin-bottom: 0.5rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     i {
