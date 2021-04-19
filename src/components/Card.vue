@@ -1,9 +1,9 @@
 <template>
   <!-- <div id="card" :style="{ '--clipPath': clipPathStyle }"> -->
-  <div id="card">
+  <div class="card" :style="{ '--my-clip-path': clipId }">
     <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
     <defs>
-    <clipPath id="clipping">
+    <clipPath :id="id">
       <path :d="clipPathStyle" />
     </clipPath>
   </defs>
@@ -94,8 +94,8 @@ export default {
   name: "Card",
   props: {
     angle: {
-      type: Number,
-      default: 40,
+      type: String,
+      default: "40",
     },
     xStart: {
       type: String,
@@ -120,16 +120,19 @@ export default {
   },
   methods: {
     listenResize() {
-      "窗口大小改变时的操作";
+      //"窗口大小改变时的操作";
       //this.clipPathStyle = "path('" + this.dPath() + "')";
       this.clipPathStyle = this.dPath();
+      //document.querySelector(':root').style.setProperty('--my-clip-path', `url(#${this.id})`);
     },
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.listenResize);
+    window.removeEventListener("hashchange", this.listenResize);
   },
   data() {
     return {
+      id:null,
       clipPathStyle() {
         return "M50.21624234808966,3.846229355124001a16.44,16.44,0,0,1,10.567428303246707,-3.846229355124001h487.21632934866363a7.2884,7.2884,0,0,1,7.2884,7.2884v487.4232a7.2884,7.2884,0,0,1,-7.2884,7.2884H7.2884a7.2884,7.2884,0,0,1,-7.2884,-7.2884V53.64875768858312a16.44,16.44,0,0,1,5.872571696753293,-11.512327255192178Z";
       },
@@ -145,7 +148,7 @@ export default {
         } else {
           hei = processString(this.hei);
         }
-        return genPath(this.angle, xStart, roundSizeLeft, roundSize, wid, hei);
+        return genPath(parseFloat(this.angle), xStart, roundSizeLeft, roundSize, wid, hei);
       },
     };
   },
@@ -153,13 +156,26 @@ export default {
     //this.clipPathStyle = "path('" + this.dPath() + "')";
     this.clipPathStyle = this.dPath();
     window.addEventListener("resize", this.listenResize);
+    window.addEventListener("hashchange", this.listenResize);
+    this.id='clipping'+this._uid;
+    //document.querySelector(':root').style.setProperty('--my-clip-path', `url(#${this.id})`);
   },
+  created() {
+    this.clipPathStyle = "M50.21624234808966,3.846229355124001a16.44,16.44,0,0,1,10.567428303246707,-3.846229355124001h487.21632934866363a7.2884,7.2884,0,0,1,7.2884,7.2884v487.4232a7.2884,7.2884,0,0,1,-7.2884,7.2884H7.2884a7.2884,7.2884,0,0,1,-7.2884,-7.2884V53.64875768858312a16.44,16.44,0,0,1,5.872571696753293,-11.512327255192178Z";
+  },
+  computed : {
+    clipId(){
+      return 'url(#'+this.id+')';
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-#card {
+
+.card {
   //clip-path: var(--clipPath) !important;
-  clip-path: url(#clipping) !important;
+  //clip-path: url(#clipping) !important;
+  clip-path: var(--my-clip-path) !important;
 }
 </style>

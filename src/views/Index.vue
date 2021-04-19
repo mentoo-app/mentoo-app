@@ -3,13 +3,13 @@
     <div class="index-head">
       <img id="logo" src="../assets/logo.png" />
     </div>
-    <router-link style="text-decoration: none; color: inherit;" to="/about">
+    <router-link style="text-decoration: none; color: inherit;" to="/main">
     <div class="card-shadow">
       <div id="title-container" class="index-card">
         <Card xStart="10vw" height="60vmax" wid="100%" roundSize="1.33vmin" roundSizeLeft="3vmin">
         <SvgIcon name="headline_mentoo_page"/>
         <p>
-          „#Men Too“ ist eine Hilfsplattform, welche den männlichen Opfern von sexuellem Missbrauch Soforthilfe leisten soll. 
+          „#Men Too“ ist eine Hilfsplattform, die männlichen Opfern von sexuellem Missbrauch Soforthilfe leisten soll. 
         </p>
         </Card>
       </div>
@@ -77,7 +77,7 @@ export default {
     }
     p{
         //margin-top: 1.9vh;
-        margin-top: 1.9vh;
+        margin-top: max(1.9vh,3.73vw);
         color: $text-color;
         font-size: 1rem;
         font-weight: weight(lightest);
@@ -127,5 +127,8 @@ export default {
 
 #logo{
     width:40vmin;
+}
+.card {
+  clip-path: var(--my-clip-path) !important;
 }
 </style>

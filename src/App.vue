@@ -21,14 +21,18 @@ export default {
       console.log(from); // '/'
       console.log(to); // '/next1'
       //to、from是最基本的路由对象，分别表示从(from)某个页面跳转到(to)另一个页面,to.path（表示要跳转到的路由地址），from.path同理。
-      const routerDeep = ["/", "/next1"];
+      //const routerDeep = ["/", "/next1"];
       //找到to.path和from.path在routerDeep数组中的下标
-      const toDepth = routerDeep.indexOf(to.path);
-      const fromDepth = routerDeep.indexOf(from.path);
+      //const toDepth = routerDeep.indexOf(to.path);
+      //const fromDepth = routerDeep.indexOf(from.path);
+      const toPathArr=[...new Set(to.path.split('/'))];
+      const fromPathArr=[...new Set(from.path.split('/'))];
+      const toDepth = toPathArr.length;
+      const fromDepth = fromPathArr.length;
       //this.transitionName = toDepth <= fromDepth ? "fold-left" : "fold-right";
       if (toDepth == fromDepth) {
         this.transitionName = "none";
-      } else if (toDepth < fromDepth) {
+      } else if (toDepth > fromDepth) {
         this.transitionName = "fold-left";
       } else {
         this.transitionName = "fold-right";

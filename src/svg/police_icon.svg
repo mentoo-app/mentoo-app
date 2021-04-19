@@ -1,1 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="图层_1" data-name="图层 1" version="1.1" width="46.2" height="49.592"><defs id="defs4"><style id="style2">.cls-1{fill:#606060}</style></defs><path class="cls-1" d="M9.37 42.22H7v7.25h1V46.7h1.35a2.17 2.17 0 002.23-2.25 2.1 2.1 0 00-2.21-2.23zM8 43.19h1.3a1.18 1.18 0 011.24 1.25 1.19 1.19 0 01-1.24 1.28H8z" id="path8"/><path class="cls-1" d="M14.66 43.89a2.77 2.77 0 00-2.81 2.85 2.73 2.73 0 002.8 2.85 2.85 2.85 0 000-5.7zm0 4.73a1.88 1.88 0 010-3.76 1.88 1.88 0 010 3.76z" id="path10"/><path class="cls-1" id="polygon12" transform="translate(-3 -2.91)" d="M20.65 45.56h1.04v5.88h-1.04v.93h3.1v-.93h-1.03v-6.81h-2.07z"/><path class="cls-1" d="M22.32 41.93a.7.7 0 10.7.69.68.68 0 00-.7-.69z" id="path14"/><path class="cls-1" id="polygon16" transform="translate(-3 -2.91)" d="M24.81 52.37h1.03v-5.44h-1.99v.92h.96z"/><path class="cls-1" id="polygon18" transform="translate(-3 -2.91)" d="M30.96 46.93h-4.02v.92h2.94l-2.99 3.35-.04.03v1.14h4.16v-.91h-3.08l3-3.35.03-.04z"/><path class="cls-1" d="M31.06 43.89a2.66 2.66 0 00-2.61 2.87 2.6 2.6 0 002.66 2.83 2.43 2.43 0 002.44-1.75v-.13l-1-.24v.12a1.4 1.4 0 01-1.43 1 1.5 1.5 0 01-1.62-1.5h4.12v-.41a2.5 2.5 0 00-2.56-2.79zm-1.53 2.31a1.52 1.52 0 011.53-1.35 1.42 1.42 0 011.5 1.35z" id="path20"/><path class="cls-1" id="polygon22" transform="translate(-3 -2.91)" d="M38.03 52.37h1.03v-5.44h-2v.92h.97z"/><path class="cls-1" d="M35.54 43.33a.68.68 0 00.7-.7.7.7 0 00-1.39 0 .69.69 0 00.69.7z" id="path24"/><path class="cls-1" d="M44 21.48l-8.43-2.05-6-6.51a2.28 2.28 0 00-1.66-.73H13.55a2.33 2.33 0 00-1.69.73L5.4 19.76H1.82A1.83 1.83 0 000 21.59v7.94a1.34 1.34 0 001.33 1.33h5.75a3.55 3.55 0 005.85 2 3.64 3.64 0 001.13-2H28a3.58 3.58 0 002.89 2.84 4 4 0 00.6 0A3.56 3.56 0 0035 30.86h11.2v-6.67a2.78 2.78 0 00-2.2-2.71zm-14 7.33a1.94 1.94 0 011.38-.57 1.76 1.76 0 01.33 0 2 2 0 11-2.26 2.26 2 2 0 01.62-1.69zm-20.75-.14a2 2 0 011.23-.43h.34a1.89 1.89 0 011.68 1.85 2 2 0 01-.65 1.56 2 2 0 01-1.63.47 2 2 0 01-1.59-1.59 3.11 3.11 0 010-.43 1.94 1.94 0 01.69-1.43zm13.84-7.31h8.42v-1.6h-8v-6h4.38a.69.69 0 01.49.21l6.3 6.83 8.9 2.17a1.18 1.18 0 01.9 1.15v5.08h-9.61A3.57 3.57 0 0032 26.69a3.56 3.56 0 00-4 2.57H14a3.57 3.57 0 00-2.83-2.57 3.54 3.54 0 00-4 2.57H1.56v-7.67a.23.23 0 01.23-.23h10.33a1.54 1.54 0 001.54-1.54v-6h8.26v6.36a1.26 1.26 0 001.24 1.18zm-15.58-1.6l4.5-4.76v4.76zm20.5 11z" id="path26"/><path class="cls-1" id="rect28" d="M36.69 24.58h4.65v1.6h-4.65z"/><path class="cls-1" d="M23.2 6.78A2.24 2.24 0 0021 4.54h-1.28a2.24 2.24 0 00-2.24 2.24v3.48h5.72zm-4.13 0a.64.64 0 01.64-.64H21a.64.64 0 01.64.64v1.89h-2.58V6.78z" id="path30"/><path class="cls-1" id="rect32" d="M19.4 0H21v3.28h-1.6z"/><path class="cls-1" id="rect34" d="M24.55 7.84h3.28v1.6h-3.28z"/><path class="cls-1" id="rect36" d="M12.93 7.84h3.28v1.6h-3.28z"/><path class="cls-1" transform="rotate(-53.48)" id="rect38" d="M5.18 12.84h1.6v3.28h-1.6z"/><path class="cls-1" transform="rotate(-41.17)" id="rect40" d="M15.103 18.881h3.28v1.6h-3.28z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="图层_1"
+   data-name="图层 1"
+   version="1.1"
+   width="46.200001"
+   height="33.758327"
+   sodipodi:docname="police_icon.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs22" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     id="namedview20"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="14.820939"
+     inkscape:cx="23.1"
+     inkscape:cy="24.796"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="图层_1" />
+  <path
+     d="m 44,21.48 -8.43,-2.05 -6,-6.51 A 2.28,2.28 0 0 0 27.91,12.19 H 13.55 a 2.33,2.33 0 0 0 -1.69,0.73 L 5.4,19.76 H 1.82 A 1.83,1.83 0 0 0 0,21.59 v 7.94 a 1.34,1.34 0 0 0 1.33,1.33 h 5.75 a 3.55,3.55 0 0 0 5.85,2 3.64,3.64 0 0 0 1.13,-2 H 28 a 3.58,3.58 0 0 0 2.89,2.84 4,4 0 0 0 0.6,0 A 3.56,3.56 0 0 0 35,30.86 H 46.2 V 24.19 A 2.78,2.78 0 0 0 44,21.48 Z m -14,7.33 a 1.94,1.94 0 0 1 1.38,-0.57 1.76,1.76 0 0 1 0.33,0 2,2 0 1 1 -2.26,2.26 2,2 0 0 1 0.62,-1.69 z M 9.25,28.67 a 2,2 0 0 1 1.23,-0.43 h 0.34 a 1.89,1.89 0 0 1 1.68,1.85 2,2 0 0 1 -0.65,1.56 2,2 0 0 1 -1.63,0.47 2,2 0 0 1 -1.59,-1.59 3.11,3.11 0 0 1 0,-0.43 1.94,1.94 0 0 1 0.69,-1.43 z m 13.84,-7.31 h 8.42 v -1.6 h -8 v -6 h 4.38 a 0.69,0.69 0 0 1 0.49,0.21 l 6.3,6.83 8.9,2.17 a 1.18,1.18 0 0 1 0.9,1.15 V 29.2 H 34.87 A 3.57,3.57 0 0 0 32,26.69 3.56,3.56 0 0 0 28,29.26 H 14 a 3.57,3.57 0 0 0 -2.83,-2.57 3.54,3.54 0 0 0 -4,2.57 H 1.56 v -7.67 a 0.23,0.23 0 0 1 0.23,-0.23 h 10.33 a 1.54,1.54 0 0 0 1.54,-1.54 v -6 h 8.26 v 6.36 a 1.26,1.26 0 0 0 1.24,1.18 z M 7.51,19.76 12.01,15 v 4.76 z m 20.5,11 z"
+     id="path26" />
+  <path
+     id="rect28"
+     d="m 36.69,24.58 h 4.65 v 1.6 h -4.65 z" />
+  <path
+     d="M 23.2,6.78 A 2.24,2.24 0 0 0 21,4.54 h -1.28 a 2.24,2.24 0 0 0 -2.24,2.24 v 3.48 h 5.72 z m -4.13,0 A 0.64,0.64 0 0 1 19.71,6.14 H 21 a 0.64,0.64 0 0 1 0.64,0.64 V 8.67 H 19.06 V 6.78 Z"
+     id="path30" />
+  <path
+     id="rect32"
+     d="M 19.4,0 H 21 v 3.28 h -1.6 z" />
+  <path
+     id="rect34"
+     d="m 24.55,7.84 h 3.28 v 1.6 h -3.28 z" />
+  <path
+     id="rect36"
+     d="m 12.93,7.84 h 3.28 v 1.6 h -3.28 z" />
+  <path
+     id="rect38"
+     d="m 13.401491,3.4782243 0.952165,-1.2858387 2.635969,1.951939 -0.952165,1.2858386 z" />
+  <path
+     id="rect40"
+     d="m 23.798205,4.2706203 2.469052,-2.159209 1.053273,1.2044156 -2.469052,2.1592089 z" />
+</svg>
