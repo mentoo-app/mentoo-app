@@ -80,6 +80,7 @@ export default {
         { id: 2, title1: "Strafanzeige", title2: "an die Kanzlei", name: "lawyer" },
         { id: 3, title1: "Care Management", title2: "im Krankenhaus", name: "hospital" },
         { id: 4, title1: "Psychologische", title2: "Beratung", name: "psy" },
+        { id: 5, title1: "aktuelle soziale", title2: "Aktivitäten", name: "news" }
       ],
     };
   },

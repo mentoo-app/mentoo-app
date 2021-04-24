@@ -32,7 +32,7 @@
       </div>
       
     </div>
-    <TabBar v-show="tabShow"></TabBar>
+    <TabBar v-show="tabShow" :active="1"></TabBar>
   </div>
 </template>
 <script>
@@ -137,6 +137,11 @@ export default {
       color:$primary-color;
       font-size:1.05em;
       -webkit-text-stroke: 0.03rem;
+      text-align: justify;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
     }
   }
 }

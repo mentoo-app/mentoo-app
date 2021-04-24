@@ -132,7 +132,11 @@ body {
   //overflow: hidden;
   //min-height: 600px;
 }
-@media screen and (orientation: landscape) {
+html,body{
+  height: 100%;
+}
+
+@media screen and (orientation: landscape) and (min-aspect-ratio: 3/2) {
   #app {
     visibility: hidden;
   }
@@ -147,7 +151,7 @@ body {
   }
 }
 
-@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+@media only screen and (max-device-width: 480px) and (orientation: landscape) and (min-aspect-ratio: 3/2) {
   /* iPhone landscape */
   #app {
     visibility: hidden;

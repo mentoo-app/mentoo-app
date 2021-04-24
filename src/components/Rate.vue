@@ -100,7 +100,7 @@ export default {
     },
     isFilled(index) {
       //from bool to 0,0.5,1
-      if (index-this.rate == 0.5) {
+      if (index-this.rate >0 && index-this.rate <1) {
         return 0.5;
       } else if (this.rate - index >= 0) {
         return 1;

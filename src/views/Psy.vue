@@ -32,7 +32,7 @@
       </div>
       
     </div>
-    <TabBar v-show="tabShow"></TabBar>
+    <TabBar v-show="tabShow" :active="3"></TabBar>
   </div>
 </template>
 <script>
@@ -92,6 +92,7 @@ export default {
 
 .card {
   background-color: $card-color;
+  
   /*margin-bottom: 1.5rem;*/
   margin-bottom: 2vh;
   /*height:15vh;*/
@@ -137,6 +138,11 @@ export default {
       color:$primary-color;
       font-size:1.05em;
       -webkit-text-stroke: 0.03rem;
+      text-align: justify;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
     }
   }
 }

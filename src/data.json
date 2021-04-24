@@ -1,0 +1,594 @@
+{
+    "lawyer": [
+        {
+            "id": 1,
+            "name": "Claus Pinkerneil",
+            "fake_distance": "450m",
+            "sex": "m",
+            "img": "lawyer/person/Claus_Pinkerneil.png",
+            "address": "Mendelssohn Straße 27, 10405 Berlin",
+            "lat": 52.52686,
+            "lon": 13.42046,
+            "openning_hour": "24/7",
+            "tel": "030-31004080",
+            "office_img": "lawyer/place/Studio_Claus_Pinkerneil.png",
+            "personal_introduction": "ist Fachanwalt für Strafrecht, spezialisiert auf Strafverteidigung, insb. im Verkehrsrecht, Sexualstrafrecht sowie auf die Verteidigung in der Revision.",
+            "termin_introduction": "Termin können Sie jederzeit telefonisch vereinbaren.",
+            "office_introduction": "Unsere flexiblen Bürozeiten ermöglichen Ihnen auch bequeme Termine abends oder am Wochenende.",
+            "reviews": [
+                {
+                    "name": "Frau Schwarzmüller",
+                    "rate": 5,
+                    "time": ">6",
+                    "message": "Ich werde hier seit Jahren sehr gut anwaltlich beraten."
+                },
+                {
+                    "name": "Benjamin Schirmeier",
+                    "rate": 5,
+                    "time": ">7",
+                    "message": "super Anwalt mit hoher Fachkompetenz."
+                },
+                {
+                    "name": "Sebastian Bicher",
+                    "rate": 5,
+                    "time": ">8",
+                    "message": "sehr kompetente Vertretung… Vielen Dank!"
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 5,
+                    "time": ">12",
+                    "message": "langzeitliche und umfassende Beratung. "
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Renate Schultz",
+            "fake_distance": "900m",
+            "sex": "f",
+            "img": "lawyer/person/Renate_Schultz.png",
+            "address": "Greifswalder Straße 04, 10405 Berlin",
+            "lat": 52.53773,
+            "lon": 13.43505,
+            "openning_hour": "Mo-Sa 10:00-22:00",
+            "tel": "030-43725026",
+            "office_img": "lawyer/place/Studio_Renate_Schultz.png",
+            "personal_introduction": "spezialisiert auf Strafverteidigung, insb. im Arztstrafrecht, Sexualstrafrecht, Wirtschaftsstrafrecht, Drogenstrafrecht und Jugendstrafrecht.",
+            "termin_introduction": "Termin können Sie Montag bis Samstag von 10:00 bis 20:00 Uhr\ntelefonisch vereinbaren.",
+            "office_introduction": "Die Kanzlei ist eine kleine und flexible Einheit, welche es ermöglicht schnell und effektiv für die Rechte der Mandanten tätig zu werden.",
+            "reviews": [
+                {
+                    "name": "Street Consulting",
+                    "rate": 5,
+                    "time": ">2",
+                    "message": "bin sehr froh bei ihm aufgehoben zu sein."
+                },
+                {
+                    "name": "Franz Schwarzmüller",
+                    "rate": 4,
+                    "time": ">7",
+                    "message": "Ich werde hier seit Jahren sehr gut anwaltlich beraten."
+                },
+                {
+                    "name": "Sebastian Bicher",
+                    "rate": 3,
+                    "time": ">7",
+                    "message": "Leider ist Kanzlei nur auf Gewinn und nicht auf Zufriedenheit des Klienten aus. Missverständnisse sind vorprogrammiert. "
+                },
+                {
+                    "name": "S.Te",
+                    "rate": 3,
+                    "time": ">7",
+                    "message": "Bei Herrn Heller wartet man ewig auf eine Antwort."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Benjamin Grunst",
+            "fake_distance": "1,2km",
+            "sex": "m",
+            "img": "lawyer/person/Benjamin_Grunst.png",
+            "address": "Bahnhofstraße 17, 12555 Berlin",
+            "lat": 52.45665,
+            "lon": 13.57802,
+            "openning_hour": "Mo-Fr 10:00+",
+            "tel": "030-51302682",
+            "office_img": "lawyer/place/Studio_Benjamin_Grunst.png",
+            "personal_introduction": "ist Fachanwalt für Strafrecht, spezialisiert auf Strafverteidigung, insb. Sexualstrafrecht，Nebenklage bei Sexualdelikten und Tötungsdelikten und vieles mehr.",
+            "termin_introduction": "Termin können Sie telefonisch oder per Email vereinbaren.",
+            "office_introduction": "Email: kontakt@kanzlei-bhg.de. Sie erreichen uns zu unseren Bürozeiten von Montag bis  Freitag ab 10:00 Uhr",
+            "reviews": [
+                {
+                    "name": "Falafel Baba",
+                    "rate": 4,
+                    "time": ">6",
+                    "message": "Sehr netter und professineller Anwalt."
+                },
+                {
+                    "name": "Janek Drachsel",
+                    "rate": 5,
+                    "time": ">7",
+                    "message": "Guter Stratege! Ich bin sehr froh bei ihm aufgehoben zu sein."
+                },
+                {
+                    "name": "Sebastian Bicher",
+                    "rate": 5,
+                    "time": ">8",
+                    "message": "sehr kompetente Vertretung… Vielen Dank!"
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 5,
+                    "time": ">12",
+                    "message": "langzeitliche und umfassende Beratung. "
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Ursus Koerner von Gustorf",
+            "fake_distance": "2,4km",
+            "sex": "m",
+            "img": "lawyer/person/Ursus_Koerner_von_Gustorf.png",
+            "address": "Münchener Straße 16, 10779 Berlin",
+            "lat": 52.49135,
+            "lon": 13.34167,
+            "openning_hour": "Mo-Fr 10:00-14:00",
+            "tel": "030-21232921",
+            "office_img": "lawyer/place/Studio_Ursus_Koerner_von_Gustorf.png",
+            "personal_introduction": "ist Fachanwalt für Strafrecht, seine Schwerpunkt liegt als Rechtsanwalt und pezialisiert auf Strafverteidiger im Sexualstrafrecht.",
+            "termin_introduction": "Termin können Sie Montag bis Freitag von 10:00 bis 14:00 Uhr telefonisch vereinbaren.",
+            "office_introduction": "Die Kanzlei ist eine kleine und flexible Einheit, welche es ermöglicht schnell und effektiv für die Rechte der Mandanten tätig zu werden.",
+            "reviews": [
+                {
+                    "name": "A Maxi",
+                    "rate": 5,
+                    "time": ">6",
+                    "message": "Danke an Herrn Ursus Koerner! Sehr kompetent und immer hilfsbereit!"
+                },
+                {
+                    "name": "Frau Schwarzmüller",
+                    "rate": 4,
+                    "time": ">6",
+                    "message": "Ich werde hier seit Jahren sehr gut anwaltlich beraten."
+                },
+                {
+                    "name": "Massimo Petrini",
+                    "rate": 5,
+                    "time": ">8",
+                    "message": "Berlins bester Rechtsanwalt. Kann ich jeden Empfehlen.Hoffe es bleibt auch so!"
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 4,
+                    "time": ">18",
+                    "message": "Toller Netter Anwalt."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Dr. Katrin Hawickhorst",
+            "fake_distance": "3,6km",
+            "sex": "f",
+            "img": "lawyer/person/Dr._Katrin_Hawickhorst.png",
+            "address": "Kal-Max-Straße 71,12043 Berlin",
+            "lat": 52.48568,
+            "lon": 13.42872,
+            "openning_hour": "Mo-Th 08:00-15:00",
+            "tel": "030-2593336",
+            "office_img": "lawyer/place/Studio_Dr._Katrin_Hawickhorst.png",
+            "personal_introduction": "spezialisiert auf Strafverteidigung, insb. im Arztstrafrecht, Sexualstrafrecht, Wirtschaftsstrafrecht, Drogenstrafrecht und Jugendstrafrecht.",
+            "termin_introduction": "Termin können telefonisch oder per Email vereinbaren.",
+            "office_introduction": "Email: kontakt@kanzlei-hawickorst.net. Sie erreichen uns zu unseren Bürozeiten von Montag bis Donnerstag in der Zeit  von 8:00 bis 15:00 Uhr",
+            "reviews": [
+                {
+                    "name": "Christoff Rieder",
+                    "rate": 5,
+                    "time": ">6",
+                    "message": "Super Beratung, sehr freundlich"
+                },
+                {
+                    "name": "Franz Schwarzmüller",
+                    "rate": 5,
+                    "time": ">7",
+                    "message": "Sie ist eine sehr gut Anwältin."
+                },
+                {
+                    "name": "Sebastian Bicher",
+                    "rate": 2,
+                    "time": ">8",
+                    "message": "Vorsicht!!! Es wird von dieser Kanzlei mit Forderungen von ominösen Mandanten versendet."
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 5,
+                    "time": ">12",
+                    "message": "Wir haben uns sehr gut betreut gefühlt Vielen Dank!"
+                }
+            ]
+        }
+    ],
+    "hospital": [
+        {
+            "id": 1,
+            "name": "Gewaltschutzambulanz Charité",
+            "img": "hospital/place/Gewaltschutzambulanz_Charite.png",
+            "address": "Birkenstraße 62 Haus N, 10559 Berlin",
+            "tel": "030-450570270",
+            "reviews": [
+                {
+                    "name": "Petra F",
+                    "rate": 5,
+                    "time": ">7",
+                    "message": "Der Arzt hörte mir aufmerksam zu und führte alle notwendigen Tests durch."
+                },
+                {
+                    "name": "Pia Borchert",
+                    "rate": 4,
+                    "time": ">6",
+                    "message": "Ich werde hier seit Jahren sehr gut antwaltlich beraten."
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 4,
+                    "time": ">18",
+                    "message": "Toller große Praxis mit mehreren Spzialisten."
+                }
+            ],
+            "doctors": []
+        },
+        {
+            "id": 2,
+            "name": "Praxis Prenzlauer Berg Berlin",
+            "img": "hospital/place/Praxis_Prenzlauer_Berg_Berlin.png",
+            "address": "Danziger Straße 78b, 10405 Berlin",
+            "tel": "030-44039972",
+            "reviews": [
+                {
+                    "name": "Fuchsmädchen",
+                    "rate": 5,
+                    "time": ">8",
+                    "message": "Sehr freundlich, superschnell (Kam punktlich zu meinem Termin dran) und trotzdem alles wichtige erklärt."
+                },
+                {
+                    "name": "Michael Liermann",
+                    "rate": 4,
+                    "time": ">7",
+                    "message": "Super Arzt! freundliches kompetentes Personal. Behandlung fachkundig, aufgeschlossen."
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 4,
+                    "time": ">16",
+                    "message": "sehr professionell und perfekt organisiert."
+                }
+            ],
+            "doctors": [
+                {
+                    "name": "Dr.med.Wolfgang Schmidt",
+                    "img": "hospital/person/Dr._med._Wolfgang_Schmidt_Avatar.png",
+                    "type": "Facharzt für Allgemeinmedizin, Infektionsmedizin"
+                },
+                {
+                    "name": "Andreas Carganico",
+                    "img": "hospital/person/Andreas_Carganico_Avatar.png",
+                    "type": "Fachartz für Allgemeinmedizin, Infektionskrankheiten, Suchtmedizin"
+                },
+                {
+                    "name": "Jukka Hartikainen",
+                    "img": "hospital/person/Jukka_Hartikainen_Avatar.png",
+                    "type": "Facharzt für Allgemeinmedizin, Infektiologie, HIV/Hepatitis/STD"
+                },
+                {
+                    "name": "Jeannette Bonness",
+                    "img": "hospital/person/Jeannette_Bonness_Avatar.png",
+                    "type": "Facharzt für Allgemeinmedizin, Infektiologie, HIV/Hepatitis/STD"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Zentrum für Infektiologie Berlin",
+            "img": "hospital/place/Zentrum_fuer_Infektiologie_Berlin.png",
+            "address": "Driesener Straße 11, 10439 Berlin",
+            "tel": "030-2332120",
+            "reviews": [
+                {
+                    "name": "A Maxi",
+                    "rate": 5,
+                    "time": ">7",
+                    "message": "Beratung und Behandlung. Super Labor！"
+                },
+                {
+                    "name": "Franz Schwarymüller",
+                    "rate": 4,
+                    "time": ">6",
+                    "message": "Ich werde hier seit Jahren sehr gut antwaltlich beraten."
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 4,
+                    "time": ">17",
+                    "message": "Toller netter Artz"
+                }
+            ],
+            "doctors": [
+                {
+                    "name": "Dr. med. Tobias Glaunsinger",
+                    "img": "hospital/person/Dr._med._Tobias_Glaunsinger_Avatar.png",
+                    "type": "Fachartz für Allgemeinmedizin, Infektiologe [DGI und ÄK Berlin]"
+                },
+                {
+                    "name": "Natthias Straub",
+                    "img": "hospital/person/Natthias_Straub_Avatar.png",
+                    "type": "Facharzt für Allgemeinmedizin, Infektiologe [ÄK Nordrhein]"
+                },
+                {
+                    "name": "Enrico Rogat",
+                    "img": "hospital/person/Enrico_Rogat_Avatar.png",
+                    "type": "Krankenpfleger"
+                },
+                {
+                    "name": "Anke Fredrich",
+                    "img": "hospital/person/Anke_Fredrich_Avatar.png",
+                    "type": "Arzthelferin"
+                },
+                {
+                    "name": "Annette Thiele",
+                    "img": "hospital/person/Annette_Thiele_Avatar.png",
+                    "type": "Kauffrau im Gesundheitswesen"
+                },
+                {
+                    "name": "Thomas Schmidt",
+                    "img": "hospital/person/Thomas_Schmidt_Avatar.png",
+                    "type": "Medizinischer Fachangestellter"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Infektiologie Ärtzeforum Seestraße",
+            "img": "hospital/place/Infektiologie_AErtzeforum_Seestrasse.png",
+            "address": "Seestraße 64, D-13347 Berlin",
+            "tel": "030-4550950",
+            "reviews": [
+                {
+                    "name": "Nur Deutschmann",
+                    "rate": 5,
+                    "time": ">6",
+                    "message": "habe mich super aufgeoben gefühlt. Bei der Nachbesprechung wurde vom Arzt alles super erklärt."
+                },
+                {
+                    "name": "Franz Schwarymüller",
+                    "rate": 4,
+                    "time": ">6",
+                    "message": "habe mich super aufgeoben gefühlt. Bei der Nachbesprechung wurde vom Arzt alles super erklärt."
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 1,
+                    "time": ">18",
+                    "message": "habe mich super aufgeoben gefühlt. Bei der Nachbesprechung wurde vom Arzt alles super erklärt."
+                }
+            ],
+            "doctors": [
+                {
+                    "name": "Dr. med. Wolfgang Heise",
+                    "img": "hospital/person/Dr._med._Wolfgang_Heise_Avatar.png",
+                    "type": "Facharzt für Innere Medizin, Infektiologe, Suchtmedizin"
+                },
+                {
+                    "name": "Dr. med. Walter Heise",
+                    "img": "hospital/person/Dr._med._Walter_Heise_Avatar.png",
+                    "type": "Facharzt für Innere Medizin, Infektiologe, Reisemedizin"
+                },
+                {
+                    "name": "Dr. med. Luca Stein",
+                    "img": "hospital/person/Dr._med._Luca_Stein_Avatar.png",
+                    "type": "Facharzt für Allgemeinmedizin, Infektiologe"
+                },
+                {
+                    "name": "Iris Wunsch Teruel",
+                    "img": "hospital/person/Iris_Wunsch_Teruel_Avatar.png",
+                    "type": "Weiterbildungsassistentin"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Berlin Aids-Hilfe e.V. Kurfürstenstraße",
+            "img": "hospital/place/Hilfe_e.V._Kurfuerstenstrasse.png",
+            "address": "Wilhelmstraße 138, 10963 Berlin",
+            "tel": "030-8856400",
+            "reviews": [
+                {
+                    "name": "A Maxi",
+                    "rate": 1,
+                    "time": ">7",
+                    "message": "bad staff"
+                },
+                {
+                    "name": "Franz Schwarymüller",
+                    "rate": 2,
+                    "time": ">6",
+                    "message": "Ich werde hier seit Jahren sehr gut antwaltlich beraten."
+                },
+                {
+                    "name": "Gregor Eisner",
+                    "rate": 4,
+                    "time": ">16",
+                    "message": "Alles gut erklärt und das Ergebnis kam sehr zeitnah."
+                }
+            ],
+            "doctors": []
+        }
+    ],
+    "psy": {
+        "single":{
+            "sender":"Lavender Rain",
+            "me":"KranichZSR",
+            "messages":[
+                {"type":"receive","message":"Guten Tag, Ich bin Mitarbeiter aus dem „Gemeinsam gegen sexuellen Missbrauch e.V.“ Wir helfen Opfern, das Psychotrauma und sozialen Auswirkungen ihre Viktimisierungs- erfahrung zu überwinden."},
+                {"type":"send","message":"Hallo, Lavender Rain, darf ich über den sexuellen Missbrauch anfragen?"}
+            ]
+        },
+        "group":{
+            "me":"KranichZSR",
+            "records":[
+                {"name":"Lavender Rain","time":"1:32pm"},
+                {"name":"KranichZSR","time":"2:32pm"}
+            ],
+            "messages":[
+                {"sender_type":"0","sender":"Lavender Rain","type":"receive","message":"Guten Tag, Ich bin Mitarbeiter aus dem „Gemeinsam gegen sexuellen Missbrauch e.V.“ Dies ist ein sicherer Raum, in dem Betroffener von sexuellem Übergriff und ihre Angehörigen miteinander in Kontakt treten können. Bitte zögern Sie nicht, mit dem Mitarbeiter oder mit der Mitarbeiterin zu chatten."},
+                {"sender_type":"0","sender":"Drea","type":"receive","message":""},
+                {"sender_type":"1","sender":"Courageous Dragonfly","type":"receive","message":"hallo"}
+            ]
+        }
+    },
+    "news": {
+        "demo": [
+            {
+                "title":"Demo gegen Missbrauch und Gewalt in Berlin.",
+                "subtitle":"Zwei Kundgebungen geplant",
+                "post_time":"Sonntag, 18.04.2021, 08:00 Uhr",
+                "img":"news/demo/Demo_Berlin.png",
+                "intro":"Am Samstag 17. April 2021 sind in Berlin gleich zwei Protestveranstaltungen geplant. Anlass sind die Fälle von Jungemissbrauch, die vor Kurzem öffentlich wurden. Geplant sind Kundgebungen und ein Demonstrationszug.",
+                "explain":{
+                    "title":"Mehr zum Thema",
+                    "founder":"Neue Opfer im Missbrauchsfall von Berlin",
+                    "text":"Sechs Monate bis zur Verhaftung von Adrian V."
+                },
+                "route":{
+                    "title":"Kundgebung und Demonstrationszug",
+                    "text":"Wir würden uns freuen, wenn jeder Teilnehmer ein rotes Oberteil tragen könnte, damit wir gemeinsam ein Zeichen der Solidarität setzen können. Am Samstag um 12 Uhr auf dem Zoologischer Garten beginnen. Um 12.30 Uhr startet der Zug, der über Hauptbahnhof, Friedrichstraße und Alexanderplatz zurück zum Zoologischer Garten führt, wo eine Abschlusskundgebung stattfindet.",
+                    "contact":"info@jungemissbrauch.net"
+                },
+                "date":"22. Mai 2021",
+                "label":"Samstag, 22. Mai 2021 12:00 Uhr",
+                "tags":"#Campingplatz, Jungemissbrauch, Demo",
+                "time":"12:00 - 18:00",
+                "person":"Isabel Lorenz",
+                "category":"Demo, Tour-Event, Unterschriftensammlung",
+                "tel":"012345678"
+            },
+            {
+                "title":"Demo gegen Missbrauch und Gewalt in Lügde.",
+                "subtitle":"Protestmarsch in Detmold geplant",
+                "post_time":"Samstag 24. April, 16:47 Uhr",
+                "img":"news/demo/Demo_Luegde.png",
+                "intro":"Das Landgericht Detmold hat im Missbrauchsfall Lügde eine unfassbar milde erste Bewährungsstrafe verhängt. Die Staatsanwaltschaft will nun ein höheres Strafmaß durchsetzen. Wir fordern: eine angemessene Verurteilung für die Teilnahme an und Anstiften zum mehrfachen brutalen sexuellen Missbrauch und der Misshandlung von Kindern. Keine Bewährung! Dafür kämpfen wir am 12.Mai „Aktiv gegen Missbrauch“",
+                "explain":{
+                    "title":"Mehr zum Thema",
+                    "founder":"Tour41 e.V.",
+                    "text":"Aktiv zum Schutz von Opfern vor sexualisierter Gewalt"
+                },
+                "route":{
+                    "title":"Mahnwache und Protestmarsch",
+                    "text":"Herzliche Einladung an alle, die ihre Solidarität mit Betroffenen von sexuellem Missbrauch und Gewalt  zeigen möchten. Am Samstag, 23.05.2021 werden wir von 10.00 – 18.00 Uhr auf dem Marktplatz in Detmold eine Mahnwache unter dem Motto: GEMEINSAM AKTIV GEGEN MISSBRAUCH halten. Demo: gegen 12.00 Uhr werden wir zum Landgericht ziehen!",
+                    "contact":"info@tour41.net"
+                },
+                "date":"12. Juni 2021",
+                "label":"Samstag, 12. Juni 2021 10:00 Uhr",
+                "tags":"#KeineTatOhneKonsequenz, Missbrauchsfall, Demo",
+                "time":"10:00 - 18:00",
+                "person":"Ian Tolksdorf",
+                "category":"Demo, Tour-Event, Unterschriftensammlung",
+                "tel":"08001234567"
+            }
+        ],
+        "pre": [
+            {
+                "title":"Münchner Runde | Polit-Talk | 25.05.2021",
+                "subtitle":"Sexueller Missbrauch – Wie können wir Opfer schützen?",
+                "post_time":"Sonntag, 18.04.2021, 10:00 Uhr",
+                "img":"news/pre/Munich_Round.png",
+                "intro":"16 Jugendlichen werden durchschnittlich jeden Tag Opfer sexueller Gewalt, meldet das Bundeskriminalamt. Und immer wieder erschüttern Fälle von schwerem Jungemissbrauch die Öffentlichkeit. Die Regierung plant jetzt, Täter härter zu bestrafen. Doch was bringen höhere Strafen? Experten fordern mehr Aufklärung und Prävention. Wie können wir unsere Jugendlichen besser schützen? ",
+                "explain":{
+                    "title":"Die Gäste im Vortrag:",
+                    "founder":"",
+                    "text":[
+                        "Christine Lambrecht (SPD), Bundesjustizministerin",
+                        "Karin Steinherr, Opfer von sexuellem Missbrauch",
+                        "Alexander Stevens, der Experte für Strafrecht",
+                        "Carolina Trautner, Familienministerin in Bayern"
+                    ]
+                },
+                "route":{
+                    "title":"",
+                    "text":"",
+                    "contact":""
+                },
+                "date":"17. Mai 2021",
+                "label":"Montag 17. Mai 2021 12:00 Uhr",
+                "tags":"",
+                "time":"ab 12:00 Uhr",
+                "place":"88697 Unterhausern",
+                "person":"",
+                "category":"",
+                "tel":"012345678"
+            },
+            {
+                "title":"das Theaterstück „Tabu“ 25.06.2021 in Berlin",
+                "subtitle":"Eine unverschönerte Geschichte von Karin Steinherr.",
+                "post_time":"Freitag, 18.04.2021, 16:00 Uhr",
+                "img":"news/pre/Drama_Taboo.png",
+                "intro":"Das Theaterstück „Tabu“ erzählt in unverschönerter Form die Geschichte von Karin. Karin wurde über 30 Jahre lang sexuell Missbraucht. Wie Täter und Opfer empfinden und handeln, wird in diesem Stück eindrucksvoll dargestellt. Nach dem ca. 30 minütigen Theater spricht und diskutiert Frau Karin Steinherr mit den Kindern und Jugendlichen über ihr Erlebtes.",
+                "explain":{
+                    "title":"Die Schauspieler auf der Bühne:",
+                    "founder":"",
+                    "text":[
+                        "Kerstin Egerer stellt Opfer dar.",
+                        "Sepp Egerer stellt Täter dar",
+                        "Karin Steinherr stellt Sprecherin dar."
+                    ]
+                },
+                "route":{
+                    "title":"",
+                    "text":"",
+                    "contact":""
+                },
+                "date":"25. Juni 2021",
+                "label":"Freitag, 25. Juni 2021 11:00 Uhr",
+                "tags":"",
+                "time":"um 11 Uhr",
+                "place":"Leinestr.49, 12049 Neukölln",
+                "person":"",
+                "category":"",
+                "tel":"(030)-123456789"
+            }
+        ]
+    },
+    "edu": [
+        {
+            "question": "Wie beurteile ich ob ich dem sexuellen Missbrauch ausgesetzt wurde?",
+            "answer": "Wenn jemand eine sexuelle Handlung gegen den Willen des Opfers erzwingt, oder eine Lage ausnutzt, in der das Opfer dem Täter schutzlos ausgeliefert ist, spricht das Strafgesetzbuch (§ 177) von „sexueller Nötigung“. Wenn es um besonders schwerer Fall einer sexuellen Nötigung geht, dann wird es der Vergewaltigung vorurteilt. Der Täter wird mit einer Haftstrafe von zwei bis 15 Jahren bestraft."
+        },
+        {
+            "question": "Könnten Männer als Opfer von sexuellen Missbrauch werden?",
+            "answer": "Lange wurde angenommen, daß die Betroffener fast ausschließlich weiblich seien, und die Täterschaft wurde dabei meist Männern zugeschrieben. Diese irrtümliche Annahme konnte deshalb bestehen, weil über Jungen als Opfer weniger gesprochen wird und man ihnen nur minimale Risiken zugesteht zum Opfer zu werden. Deswegen beschränkt sich der sexuelle Missbrauch nicht nur auf Mädchen, sondern betrifft auch häufig Jungen und Männer."
+        },
+        {
+            "question": "Sind männliche Opfer weniger traumatisiert als Frauen?",
+            "answer": "Im Vergleich zu Frauen erleiden Männer nicht nur unter den Körperverletztungen sondern auch unter den großen psychischen Störungen. Stigmatisierung von außen durch das vorhanden stereotype Männerbild und vor allem Angst vor Homosexualität machen es oft für den mißbrauchten Jungen unmöglich von seinen Erfahrungen zu berichten. "
+        },
+        {
+            "question": "Ist es ein sexueller Übergriff? wenn es mein Verwandte war?",
+            "answer": "Jeder kann den Täter/rin von sexuellen Missbrauch. 60% des sexuellen Missbrauchs sind von Bekannten begangen, nach Thomas Schlingmann, der beim Berliner Verein Tauwette. Reden Sie bitte so schnell wie möglich mit den Eltern oder informieren Sie mit den Fachkräften!"
+        },
+        {
+            "question": "Ich fange sogar an, mich zu fragen, ob ich wirklich sexuell missbraucht werde?",
+            "answer": "Bei der Erduldung sexueller Handlungen empfinden Jungen trotz des Gefühls diese nicht als angenehm, verspüren sie auch möglicherweise sexuelle Erregung, welche mit Erektionen verbunden sind. Der Junge weiß oft nicht mehr, ob er den Kontakt selbst gewollt hat oder nicht. Diese Verwirrung behindert für den Jungen oft den sexuellen Missbrauch als solchen zu bezeichnen."
+        },
+        {
+            "question": "Was soll ich tun, Wenn ich mich bezweifle, sexuell missbraucht worden zu sein?",
+            "answer": "Zuerst holen Sie sich Hilfe an Polizei, Dann gehen Sie sofort zu einem Arzt oder in ein Krankenhaus! Wenn es möglich wäre, waschen Sie nicht vor einer ärztlichen Untersuchung. Bewahren Sie die Kleidung auf, die du während der Gewalttat getragen hast. Wasche sie bitte auch nicht!"
+        },
+        {
+            "question": "Was soll ich tun, vielleicht bin ich mich noch nicht bereit, Polizei anzurufen?",
+            "answer": "Wenn Sie sich noch nicht bereit sind, Anzeige bei der Polizei zu erstatten. Sammeln Sie Beweise, die für eine spätere Strafverfolgung wichtig sind, oder Versuchen Sie zuerst mit Psychiater zu reden, Was zu tun ist, weiß die Fachkraft."
+        }
+    ]
+}

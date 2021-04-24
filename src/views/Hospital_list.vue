@@ -1,5 +1,5 @@
 <template>
-  <div class="lawyer">
+  <div class="hospital">
     <!-- <Card></Card> -->
     <NavBar
       v-show="navShow"
@@ -19,13 +19,11 @@
         />
       </div>
       <div class="tab">
-        <span href="#" class="active">Entfernung</span>
-        <span href="#">Jetzt geöffnet</span>
-        <span href="#">Top bewerten</span>
+        <span href="#" class="active">Wir empfehlen für Sie:</span>
       </div>
       <div id="card-container">
-        <router-link v-for="item in PageData['lawyer']"
-          :key="item.id" :to="{ name: 'Lawyer_list_detail', query: { personId: item.id }}">
+        <router-link v-for="item in PageData['hospital']"
+          :key="item.id" :to="{ name: 'Hospital_list_detail', query: { placeId: item.id }}">
         <Card
           xStart="5vw"
           wid="92vw"
@@ -35,38 +33,24 @@
         >
           <div class="inject">
             <SvgIcon
-              v-if="item.sex == 'm'"
-              name="male_lawyer"
+              name="hospital"
               color="#5fbf44"
-              height="11.5vh"
-              class="image"
-            />
-            <SvgIcon
-              v-else
-              name="female_lawyer"
-              color="#5fbf44"
-              height="11.5vh"
+              height="9vh"
               class="image"
             />
             <div class="content">
+              <!-- <p class="name">
+                {{item.name.slice(0, 31) + (item.name.length > 31 ? "..." : "")}}
+              </p> -->
               <p class="name">
-                <span v-if="item.sex == 'm'">Rechtsanwalter</span>
-                <span v-else>Rechtsanwältin</span>
-                <br />
-                <span>{{
-                  item.name.slice(0, 17) + (item.name.length > 17 ? "..." : "")
-                }}</span>
+                {{item.name}}
               </p>
-
               <div class="information">
                 <div class="detail">
-                  <span
-                    >{{item.fake_distance}} |
-                    {{
+                  <span>{{
                       getRate(item).toString().replace(".", ",") +
                       (getRate(item).toString().length == 1 ? ",0" : "")
-                    }}</span
-                  >
+                    }}</span>
                   <Rate
                     :value="getRate(item)"
                     :disabled="true"
@@ -75,25 +59,22 @@
                   ></Rate>
                   <!--<van-rate v-model="value" size="0.8rem" gutter="0.15rem" allow-half icon="my-icon-star_full" void-icon="my-icon-star_gray"/>-->
                 </div>
-                <p class="open-status">geöffnet</p>
               </div>
             </div>
             <div class="icons">
               <!--
           <SvgIcon name="sms" color="#5fbf44"  height="5.5vw" width="5.5vw" class="image"/>
           <SvgIcon name="call" color="#5fbf44" height="5.5vw" width="5.5vw" class="image"/>-->
-          <router-link  :to="{ name: 'Lawyer_list_rate', query: { personId: item.id }}">
+          <router-link :to="{ name: 'Hospital_list_rate', query: { placeId: item.id }}">
               <SvgIcon
                 name="sms"
                 color="#5fbf44"
                 height="2.5ch"
                 width="2.5ch"
                 class="image"
-                
               />
           </router-link>
               <SvgIcon
-                id="call-icon"
                 name="call"
                 color="#5fbf44"
                 height="2.5ch"
@@ -107,7 +88,7 @@
         </router-link>
       </div>
     </div>
-    <TabBar v-show="tabShow" :active="1"></TabBar>
+    <TabBar v-show="tabShow" :active="2"></TabBar>
   </div>
 </template>
 <script>
@@ -116,7 +97,7 @@ import Rate from "@/components/Rate.vue";
 import NavBar from "@/components/NavBar.vue";
 import TabBar from "@/components/TabBar.vue";
 export default {
-  name: "Lawyer_list",
+  name: "Hospital_list",
   components: {
     Card,
     Rate,
@@ -149,7 +130,7 @@ export default {
   },
   data() {
     return {
-      title: "Strafanzeige an die Kanzlei",
+      title: "Care Management",
       isleftarrow: "",
       transitionName: "fade",
       navShow: true,
@@ -206,8 +187,9 @@ export default {
   .tab{
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-bottom:2vh;
+    padding-left:4vw;
     span{
       font-size: 1rem;
       -webkit-text-stroke-width: 0.2px;
@@ -218,7 +200,7 @@ export default {
   }
 }
 
-.lawyer {
+.hospital {
   position: absolute;
   left: 0;
   top: 0;
@@ -255,13 +237,14 @@ export default {
   padding-right: 3vw;
   .image {
     grid-area: image;
+    margin-top:1vh;
     /*margin-right: 0.5rem;*/
     // margin-right: 2vw;
   }
   .icons {
     grid-area: icons;
     width: 100%;
-    padding-bottom: 1vh;
+
     i {
       float: right;
       /*margin-left: 0.6rem;*/
@@ -271,10 +254,10 @@ export default {
     }
   }
   .content {
-    justify-self: start;
+    justify-self: flex-start;
     grid-area: content;
     display: grid;
-    grid-template-rows: 2.5fr 2fr;
+    grid-template-rows: 3fr 2fr;
     /*gap:0.1rem;*/
     // gap: 0.5vh;
     grid-template-areas:
@@ -282,26 +265,31 @@ export default {
       "info";
     .name {
       grid-area: name;
-      span {
-        float: left;
-        display: block;
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: $text-color;
-        -webkit-text-stroke-width: 0.5px;
-      }
+      width:90%;
+      float: left;
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $text-color;
+      -webkit-text-stroke-width: 0.5px;
+      text-align: left;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
     }
     .information {
       grid-area: info;
       /*position: relative;*/
       .detail {
+        margin-top:1vh;
         display: grid;
         /*grid-template-columns: 1.1fr 2fr;*/
-        grid-template-columns: 8.5ch auto;
+        grid-template-columns: 3ch auto;
         gap: 0px;
         grid-template-areas: "detail rate";
         align-items: center;
-        justify-items: start;
+        justify-items: flex-start;
         span {
           text-align: left;
           font-size: 1rem;
@@ -340,9 +328,5 @@ export default {
 }
 .card {
   clip-path: var(--my-clip-path) !important;
-}
-#call-icon{
-  position:relative;
-  z-index: 3;
 }
 </style>

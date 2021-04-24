@@ -47,7 +47,15 @@
             roundSizeLeft="4vmin"
           >
             <div class="inject">
+              <div class="group" @click="call('110')">
               <SvgIcon class="link_active2" name="link_110_active" @click.native="call('110');"/>
+              <SvgIcon
+                name="call"
+                color="#5fbf44"
+                height="3ch"
+                width="3ch"
+                class="image"
+              /></div>
               <SvgIcon
                 @click.native="activePage = 1"
                 class="link_inactive2"
@@ -58,7 +66,7 @@
         </div>
       </div>
     </div>
-    <TabBar v-show="tabShow"></TabBar>
+    <TabBar v-show="tabShow" :active="0"></TabBar>
   </div>
 </template>
 <script>
@@ -139,16 +147,23 @@ export default {
       height: 2ch;
       width: 20ch;      
     }
-    .link_active2 {
-      margin-top: 2.5ch;
-      height: 7.8ch;
-      width: 24ch;
+    .group{
+      .link_active2 {
+        margin-top: 2.5ch;
+        height: 7.8ch;
+        width: 24ch;
+      }
+      .image{
+        margin-left:2vw;
+      }
     }
+    
     .link_inactive2 {
       margin-top: 4ch;
       height: 2.3ch;
       width: 28ch;      
     }
+    
   }
 }
 
@@ -178,6 +193,11 @@ export default {
       color:$primary-color;
       font-size:1.05em;
       -webkit-text-stroke: 0.03rem;
+      text-align: justify;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
     }
   }
 }

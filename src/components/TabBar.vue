@@ -1,6 +1,6 @@
 <template>
   <div id="TabBar">
-    <van-tabbar route>
+    <van-tabbar v-model="activePage">
       <van-tabbar-item to="/main/police"
         ><SvgIcon name="police_icon"></SvgIcon>Polizei</van-tabbar-item
       >
@@ -13,7 +13,7 @@
       <van-tabbar-item to="/main/psy"
         ><SvgIcon name="psy_icon"></SvgIcon>Traumahilfe</van-tabbar-item
       >
-      <van-tabbar-item
+      <van-tabbar-item to="/main/news"
         ><SvgIcon name="news_icon"></SvgIcon>Auskünfte</van-tabbar-item
       >
     </van-tabbar>
@@ -21,7 +21,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "tabbar",
+  props: {
+    active: { default: 0, type: Number },
+  },
+  data: function () {
+    return {
+      activePage: this.active,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -48,7 +58,7 @@ export default {};
       font-size: 0.7rem;
       -webkit-text-stroke: 0.03rem;
       margin-bottom: 0.5rem;
-      display:flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
     }
