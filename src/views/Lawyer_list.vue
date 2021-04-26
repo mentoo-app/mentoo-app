@@ -312,6 +312,7 @@ export default {
           width: 100%;
           color: $text-color;
           grid-area: detail;
+          width:13ch;
         }
         .Rate {
           grid-area: rate;
