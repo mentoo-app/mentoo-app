@@ -18,11 +18,9 @@
           placeholder="durchsuchen"
         />
       </div>
-      <div class="tab">
-        <span href="#" class="active">Entfernung</span>
-        <span href="#">Jetzt geöffnet</span>
-        <span href="#">Top bewerten</span>
-      </div>
+      <ul class="tab">
+        <li @click="activate(li.id)" :class="{ active : active_el == li.id }" v-for="li in lista" :key="li.id">{{li.texto}}</li>
+      </ul>
       <div id="card-container">
         <router-link v-for="item in PageData['lawyer']"
           :key="item.id" :to="{ name: 'Lawyer_list_detail', query: { personId: item.id }}">
@@ -141,6 +139,9 @@ export default {
     getDistance: function (item) {
       return item;
     },
+    activate:function(el){
+        this.active_el = el;
+    }
   },
   computed: {
     PageData: function () {
@@ -154,6 +155,8 @@ export default {
       transitionName: "fade",
       navShow: true,
       tabShow: true,
+      lista:[{"id":"1","texto":"Entfernung"},{"id":"2","texto":"Jetzt geöffnet"},{"id":"3","texto":"Top bewerten"}],
+      active_el:1
     };
   },
 };
@@ -208,7 +211,7 @@ export default {
     align-items: center;
     justify-content: space-around;
     margin-bottom:2vh;
-    span{
+    li{
       font-size: 1rem;
       -webkit-text-stroke-width: 0.2px;
     }

@@ -7,39 +7,45 @@
       :isleftarrow="isleftarrow"
       id="nav"
     ></NavBar>
-    <div id="content-container">
-      <div id="card-container">
+    <div id="card-container">
         <Card
           xStart="8vw"
           wid="92vw"
+          hei="75vh"
           roundSize="2vmin"
           roundSizeLeft="3vmin"
           angle="40"
+          
         >
           <!-- <div class="inject"> -->
-          <div class="inject card_strech">
+          <div :class="{'inject':true, 'card_strech':isStreched}">
             <span class="name">{{this.Hospital.name}}</span>
             <span class="type">Rettungsdienst</span>
+
             <Rate
-              :value="value"
-              :disabled="false"
+              :value="myRate"
+              :disabled="submitted"
               buttonSize="2.8rem"
               starSize="1.8rem"
+              @after-rate="callBackRate"
+              @click.native="switchRate"
             ></Rate>
-            <div class="input_box">
+            <div :class="{'input_box':true, 'hide':!isStreched}">
               <!-- <div class="input_box hide"> -->
               <span class="comment_title">Feedback von</span>
-              <textarea name="comment" id="comment_text" class="comment_show" placeholder="Berichte anderen von deinen Eindrücken"></textarea>
+              <textarea name="comment" id="comment_text" class="comment_show" placeholder="Berichte anderen von deinen Eindrücken" v-model="myComment"></textarea>
               <div class="buttons">
-                <button>Posten</button>
+                <button @click="setMyRate">Posten</button>
                 <button>Abbrechen</button>
               </div>
             </div>
           </div>
         </Card>
       </div>
+    <div id="content-container">
+      
       <!-- <div id="reviews" class=""> -->
-      <div id="reviews" class="hide">
+      <div id="reviews" :class="{'hide':isStreched}">
         <span class="counter">{{this.Hospital.reviews.length}} Reviews</span>
         <div id="review-container">
           <div class="review" v-for="item,id in this.Hospital.reviews" :key="id">
@@ -51,7 +57,7 @@
                   buttonSize="1.1rem"
                   starSize="0.95rem"
                 ></Rate>
-            <span class="review_time">{{item.time}}</span>
+            <span class="review_time">{{getTime(item.time)}}</span>
             </div>
             <p class="comment">{{item.message}}</p>
           </div>
@@ -64,14 +70,18 @@
 import NavBar from "@/components/NavBar.vue";
 import Card from "../components/Card.vue";
 import Rate from "@/components/Rate.vue";
+import { Toast } from 'vant';
 export default {
-  name: "Lawyer_list_detail",
+  name: "Hospital_list_rate",
   components: {
     NavBar,
     Card,
     Rate,
   },
   methods: {
+    callBackRate:function(value){
+      this.myRate=value;
+    },
     call: function (number) {
       window.location.href = "tel:" + number;
     },
@@ -86,9 +96,62 @@ export default {
       let result = Math.round((sum / item.reviews.length) * 10) / 10.0;
       return result;
     },
+    getTime:function(time){
+      if(time==="=0"){
+        return "gerade eben"
+      }
+      let t=parseInt(time.slice(1));
+      if(t==6){
+        return "vor halbem Jahr"
+      }else if(t==12){
+        return "vor 1 Jahr"
+      }else if(t==18){
+        return "vor 1 einhalben Jahren"
+      }
+      else{
+        return `vor ${t} Monaten`
+      }
+      // return time;
+    },
+    getMyRate: function () {
+      if(this.submitted){
+        return this.Hospital.reviews.filter(x=>x.name=="KranichZSR")[0].rate;
+      }else{
+        return 0;
+      }
+    },
+    setMyRate:function(){
+      this.isStreched=false;
+      if(!this.submitted){
+        this.Hospital.reviews.unshift({
+            "name": "KranichZSR",
+            "rate": this.myRate,
+            "time": "=0",
+            "message": this.myComment
+        });
+        this.submitted=true;
+        Toast.success('Vielen Dank');
+      }
+      
+    },
     getDistance: function (item) {
       return item;
     },
+    switchRate:function(){
+      if(this.submitted){
+        return;
+      }
+      if(!this.isStreched){
+        this.isStreched=true;
+      }
+    }
+  },
+  created:function(){
+    
+    this.submitted=!(this.Hospital.reviews.filter(x=>x.name=="KranichZSR").length===0);
+  },
+  mounted:function(){
+    this.myRate=this.getMyRate();
   },
   computed: {
     Hospital: function () {
@@ -96,6 +159,13 @@ export default {
       let id=this.$route.query.placeId;
       return window.PageData.hospital.find(item=>item.id==id);
     },
+    // submitted:function (){
+    //   let queryResult=this.Hospital.reviews.filter(x=>x.name=="KranichZSR");
+    //   if(queryResult.length===0)
+    //     return false;
+    //   else
+    //     return true;
+    // },
     getTitle: function () {
       return "Rezension";
     },
@@ -106,6 +176,11 @@ export default {
       transitionName: "fade",
       navShow: true,
       tabShow: true,
+      myRate:0,
+      myComment:"",
+      rateDisabled:false,
+      isStreched:false,
+      submitted:false
     };
   },
 };
@@ -126,10 +201,10 @@ export default {
   display: block;
 }*/
 #content-container {
-  margin-top:10vh;
+  margin-top:40vh;
   width: 100%;
   padding: 0 4vw;
-  height: 90vh;
+  height: 60vh;
   display: block;
   overflow-y: scroll;
   font-size: 5rem;
@@ -178,6 +253,7 @@ export default {
           }
           span{
             float:left;
+            margin-left:1ch;
             color:$text-color;
           }
         }
@@ -192,6 +268,7 @@ export default {
   margin-bottom: 2vh;
   /*height:15vh;*/
   clip-path: var(--my-clip-path) !important;
+  border-radius: 2vmin;
   
 
   .inject {
@@ -240,9 +317,15 @@ export default {
       width:100%;
       height:42vh;
       position: absolute;
+      z-index:1;
   }
 }
 #card-container{
+  width:100%;
+  padding:0 4vw;
+  position: absolute;
+  z-index:3;
+  top:15vh;
   filter: drop-shadow(2.13vw 0.73vh 0.61vh rgba(0, 0, 0, 0.15)) !important;
   -webkit-filter: drop-shadow(
     2.13vw 0.73vh 0.61vh rgba(0, 0, 0, 0.15)
@@ -253,6 +336,7 @@ export default {
 }
 .input_box{
   width:100%;
+  height:70%;
   .comment_title{
     float: left;
     margin-left: 8vw;
@@ -268,7 +352,7 @@ export default {
     background-color: $card_color;
   }
   .comment_show{
-    height:50vh !important;
+    height:80% !important;
   }
   .buttons{
     position:absolute;
@@ -278,7 +362,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    bottom:5vh;
+    bottom:10vh;
     left:0;
     filter: drop-shadow(2.13vw 0.73vh 0.61vh rgba(0, 0, 0, 0.15)) !important;
     -webkit-filter: drop-shadow(

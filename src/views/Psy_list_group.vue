@@ -38,7 +38,7 @@
       <div class="worker_list">
         <span class="sender">Teilnehmer*in</span>
         <ul >
-          <li>{{Data.me}}</li>
+          <li>{{Data.me}} (du)</li>
           <li v-for="item, id in Data.messages.filter(x=>x.sender_type==1)" :key="id">{{item.sender}}</li>
         </ul>
       </div>
