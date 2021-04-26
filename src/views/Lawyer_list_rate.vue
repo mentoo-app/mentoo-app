@@ -10,7 +10,7 @@
       <div id="card-container">
         <Card
           xStart="8vw"
-          hei="75vh"
+          hei="90vh"
           wid="92vw"
           roundSize="2vmin"
           roundSizeLeft="3vmin"
@@ -336,7 +336,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    bottom:10vh;
+    bottom:15vh;
     left:0;
     filter: drop-shadow(2.13vw 0.73vh 0.61vh rgba(0, 0, 0, 0.15)) !important;
     -webkit-filter: drop-shadow(
@@ -359,7 +359,7 @@ textarea::placeholder {
 }
 
 .card_strech{
-  height:75vh !important;
+  height:90vh !important;
 }
 .hide{
   display:none !important;

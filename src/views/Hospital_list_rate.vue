@@ -11,7 +11,7 @@
         <Card
           xStart="8vw"
           wid="92vw"
-          hei="75vh"
+          hei="90vh"
           roundSize="2vmin"
           roundSizeLeft="3vmin"
           angle="40"
@@ -303,12 +303,14 @@ export default {
   }
 }
 
+
+
 .hospital {
   position: absolute;
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 111vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,7 +366,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    bottom:10vh;
+    bottom:15vh;
     left:0;
     filter: drop-shadow(2.13vw 0.73vh 0.61vh rgba(0, 0, 0, 0.15)) !important;
     -webkit-filter: drop-shadow(
@@ -387,7 +389,7 @@ textarea::placeholder {
 }
 
 .card_strech{
-  height:75vh !important;
+  height:90vh !important;
 }
 .hide{
   display:none !important;
