@@ -36,7 +36,7 @@
               <textarea name="comment" id="comment_text" class="comment_show" placeholder="Berichte anderen von deinen Eindrücken" v-model="myComment"></textarea>
               <div class="buttons">
                 <button @click="setMyRate">Posten</button>
-                <button>Abbrechen</button>
+                <button @click="hideRate">Abbrechen</button>
               </div>
             </div>
           </div>
@@ -132,7 +132,9 @@ export default {
         this.submitted=true;
         Toast.success('Vielen Dank');
       }
-      
+    },
+    hideRate:function(){
+      this.isStreched=false;
     },
     getDistance: function (item) {
       return item;
