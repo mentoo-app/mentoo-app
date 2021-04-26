@@ -146,7 +146,7 @@ export default {
   },
   data() {
     return {
-      title: "Einzel-Chat",
+      title: "Gruppenchat",
       isleftarrow: "",
       transitionName: "fade",
       navShow: true,
