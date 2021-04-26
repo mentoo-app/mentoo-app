@@ -1,9 +1,10 @@
 <template>
+<router-link style="text-decoration: none; color: inherit;" to="/main">
   <div id="index-page" class="full">
     <div class="index-head">
       <img id="logo" src="../assets/logo.png" />
     </div>
-    <router-link style="text-decoration: none; color: inherit;" to="/main">
+    
     <div class="card-shadow">
       <div id="title-container" class="index-card">
         <Card xStart="10vw" height="60vmax" wid="100%" roundSize="1.33vmin" roundSizeLeft="3vmin">
@@ -14,8 +15,9 @@
         </Card>
       </div>
     </div>
-    </router-link>
+    
   </div>
+  </router-link>
 </template>
 
 <script>
