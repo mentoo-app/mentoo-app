@@ -42,12 +42,7 @@
       </div>
     </div>
     
-    <Card
-        xStart="4vw"
-        hei="10vh"
-        wid="100%"
-        roundSize="1vmin"
-        roundSizeLeft="3vmin"
+    <div
         class="input"
         :style="{ '--my-top': top }"
       >
@@ -65,7 +60,7 @@
             <SvgIcon name="send_icon" height="3ch" width="3ch" />
           </button>
         </div>
-      </Card>
+      </div>
   </div>
 </template>
 <script>
@@ -222,6 +217,7 @@ export default {
   z-index: -1;
 }
 .input {
+  background-color: $card-color;
   position: absolute;
   z-index: 3;
   top: var(--my-top) !important;
